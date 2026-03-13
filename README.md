@@ -1,9 +1,6 @@
 
 # GEOG 575 Spring 2025 Final Project
 
-### Team Members
-=======
-GEOG 575 Spring 2026 Final Project
 
 ### Team Members
 - Rachel Ren
