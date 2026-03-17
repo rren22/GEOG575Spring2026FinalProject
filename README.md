@@ -5,7 +5,7 @@
 ### Team Members
 - Rachel Ren
 - Ray Weigand
-
+- Yufei Xia
 
 ### Final Proposal
 1. Persona/Scenario
