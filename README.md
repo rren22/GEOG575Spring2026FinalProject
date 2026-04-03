@@ -72,3 +72,12 @@ available resources (e.g., outlets, seating)
 This representation allows users to quickly identify, compare, and evaluate study spaces based on both spatial and environmental attributes.
 
 ## Wireframes
+
+### Wireframe 1 – UI Layout
+![Wireframe 1](img/wireframe_1.jpeg)
+
+### Wireframe 2 – Filtering & Navigation
+![Wireframe 2](img/wireframe_2.jpeg)
+
+### Wireframe 3 – Details on Demand
+![Wireframe 3](img/wireframe_3.jpeg)
