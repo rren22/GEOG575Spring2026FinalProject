@@ -1,0 +1,405 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1,
+        "name": "Memorial Union Terrace",
+        "building": "Memorial Union",
+        "description": "Cmon now do i need to explain",
+        "rating": "Top Tier",
+        "noise_level": null,
+        "occupancy": null,
+        "photo": "img/Memorial Union Terrace.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+          "coordinates": [
+            -89.399969387735,
+            43.07638853390983
+          ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2,
+        "name": "Hamel Family Browsing Library",
+        "building": "Memorial Union",
+        "description": "Super nice",
+        "rating": "Top Tier",
+        "noise_level": null,
+        "occupancy": null,
+        "photo": "img/Hamel Family Browsing Library.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+          "coordinates": [
+            -89.400969387735,
+            43.07638853390983
+          ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3,
+        "name": "Greenhouse benches",
+        "building": "Botany Garden",
+        "description": "A classic",
+        "rating": "Top Tier",
+        "noise_level": null,
+        "occupancy": null,
+        "photo": "img/Greenhouse benches.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+          "coordinates": [
+            -89.40391697320815,
+            43.07526738759224
+          ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4,
+        "name": "Merit library",
+        "building": "Merit library",
+        "description": "Surprisingly nice chill library. Bean bag chairs are a plus",
+        "rating": "Top Tier",
+        "noise_level": null,
+        "occupancy": null,
+        "photo": "img/Merit library.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+          "coordinates": [
+            -89.40390106017479,
+            43.07138904662341
+          ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 5,
+        "name": "258 soils study area",
+        "building": "Soils Building",
+        "description": "Cute area. Plants and bookshelves",
+        "rating": "Top Tier",
+        "noise_level": null,
+        "occupancy": null,
+        "photo": "img/258 soils study area.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+          "coordinates": [
+            -89.41133017434832,
+            43.076680114837814
+          ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 6,
+        "name": "6floor cs",
+        "building": "CS Building",
+        "description": "Nice study lounge with a nice view. Smells good too",
+        "rating": "Top Tier",
+        "noise_level": null,
+        "occupancy": null,
+        "photo": "img/258 soils study area.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+          "coordinates": [
+            -89.40657788431264,
+            43.07120884287952
+          ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7,
+        "name": "Memorial Union inside",
+        "building": "Memorial Union",
+        "description": "pretty nice",
+        "rating": "Top Tier",
+        "noise_level": null,
+        "occupancy": null,
+        "photo": "img/Memorial Union inside.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+          "coordinates": [
+            -89.39998013360604,
+            43.076333601791
+          ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 8,
+        "name": "Soils building 3rd floor lobby",
+        "building": "Soils Building",
+        "description": "Nice on a rainy day",
+        "rating": "Top Tier",
+        "noise_level": null,
+        "occupancy": null,
+        "photo": "img/Soils building 3rd floor lobby.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+          "coordinates": [
+            -89.41125507239052,
+            43.07658215508638
+          ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 9,
+        "name": "Microbio badger market",
+        "building": "Microbial Sciences Building",
+        "description": "Nice and open",
+        "rating": "Top Tier",
+        "noise_level": null,
+        "occupancy": null,
+        "photo": "img/Microbio badger market.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+          "coordinates": [
+            -89.41199707424346,
+            43.075435566639236
+          ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 10,
+        "name": "Ecb lobby",
+        "building": "Engineering Centers Bldg",
+        "description": "Pretty nice, spacious",
+        "rating": "Top Tier",
+        "noise_level": null,
+        "occupancy": null,
+        "photo": "img/Ecb lobby.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+          "coordinates": [
+            -89.41347060307969,
+            43.07281679476806
+          ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11,
+        "name": "Top floor of education sciences",
+        "building": "Educational Sciences",
+        "description": "Pretty dead and insane 270 degree view of Madison",
+        "rating": "Top Tier",
+        "noise_level": null,
+        "occupancy": null,
+        "photo": "img/Top floor of education sciences.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+          "coordinates": [
+            -89.40345838295234,
+            43.07190222742661
+          ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12,
+        "name": "Law school reading room",
+        "building": "Law School",
+        "description": "More cozy than the law school library",
+        "rating": "Top Tier",
+        "noise_level": null,
+        "occupancy": null,
+        "photo": "img/Law school reading room.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+          "coordinates": [
+            -89.4024007451748,
+            43.0744782361519
+          ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13,
+        "name": "Bock labs penthouse",
+        "building": "Bock Laboratories",
+        "description": "Pretty nice, quiet area",
+        "rating": "Top Tier",
+        "noise_level": null,
+        "occupancy": null,
+        "photo": "img/Bock labs penthouse.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+          "coordinates": [
+            -89.41113180662325,
+            43.07498125171187
+          ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 14,
+        "name": "Sohe patio",
+        "building": "School of Human Ecology",
+        "description": "Probably nice on a nice day",
+        "rating": "Top Tier",
+        "noise_level": null,
+        "occupancy": null,
+        "photo": "img/Sohe patio.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+          "coordinates": [
+            -89.40891966075179,
+            43.07562965569542
+          ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 15,
+        "name": "14 floor aoss",
+        "building": "Atmospheric, Oceanic and Space Sciences",
+        "description": "Nice space but no windows. They have puzzles tho",
+        "rating": "Medium Tier",
+        "noise_level": null,
+        "occupancy": null,
+        "photo": "img/14 floor aoss.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+          "coordinates": [
+            -89.40681497239078,
+            43.07087564660019
+          ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 16,
+        "name": "301 biochem",
+        "building": "Biochemical Sciences Building",
+        "description": "Nice study room area. Has separate breakout rooms",
+        "rating": "Medium Tier",
+        "noise_level": null,
+        "occupancy": null,
+        "photo": "img/301 biochem.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+          "coordinates": [
+            -89.41117470122671,
+            43.074256408224855
+          ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 17,
+        "name": "Chazen lobby",
+        "building": "Chazen Museum of Art",
+        "description": "Pretty nice. There’s a cafe",
+        "rating": "Medium Tier",
+        "noise_level": null,
+        "occupancy": null,
+        "photo": "img/Chazen lobby.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+          "coordinates": [
+            -89.39874291286556,
+            43.07395551968666
+          ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 18,
+        "name": "Limnology library",
+        "building": "Hasler Laboratory of Limnology",
+        "description": "Really nice and empty",
+        "rating": "Medium Tier",
+        "noise_level": null,
+        "occupancy": null,
+        "photo": "img/Limnology library.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+          "coordinates": [
+            -89.4028934131458,
+            43.077249372825285
+          ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 19,
+        "name": "Science hall corner",
+        "building": "Science hall",
+        "description": "Cute spot",
+        "rating": "Medium Tier",
+        "noise_level": null,
+        "occupancy": null,
+        "photo": "img/Science hall corner.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+          "coordinates": [
+            -89.40105486719271,
+            43.07592062094711
+          ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 20,
+        "name": "Law school 7th floor library",
+        "building": "Law School",
+        "description": "Only usable after 2 pm",
+        "rating": "Medium Tier",
+        "noise_level": null,
+        "occupancy": null,
+        "photo": "img/Law school 7th floor library.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+          "coordinates": [
+            -89.40215155173054,
+            43.07441123718972
+          ]
+      }
+    }
+  ]
+}
