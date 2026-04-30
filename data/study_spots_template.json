@@ -16,10 +16,10 @@
       },
       "geometry": {
         "type": "Point",
-          "coordinates": [
-            -89.399969387735,
-            43.07638853390983
-          ]
+        "coordinates": [
+          -89.399969387735,
+          43.07638853390983
+        ]
       }
     },
     {
@@ -36,10 +36,10 @@
       },
       "geometry": {
         "type": "Point",
-          "coordinates": [
-            -89.400969387735,
-            43.07638853390983
-          ]
+        "coordinates": [
+          -89.400969387735,
+          43.07638853390983
+        ]
       }
     },
     {
@@ -56,10 +56,10 @@
       },
       "geometry": {
         "type": "Point",
-          "coordinates": [
-            -89.40391697320815,
-            43.07526738759224
-          ]
+        "coordinates": [
+          -89.40391697320815,
+          43.07526738759224
+        ]
       }
     },
     {
@@ -76,10 +76,10 @@
       },
       "geometry": {
         "type": "Point",
-          "coordinates": [
-            -89.40390106017479,
-            43.07138904662341
-          ]
+        "coordinates": [
+          -89.40390106017479,
+          43.07138904662341
+        ]
       }
     },
     {
@@ -96,10 +96,10 @@
       },
       "geometry": {
         "type": "Point",
-          "coordinates": [
-            -89.41133017434832,
-            43.076680114837814
-          ]
+        "coordinates": [
+          -89.41133017434832,
+          43.076680114837814
+        ]
       }
     },
     {
@@ -116,10 +116,10 @@
       },
       "geometry": {
         "type": "Point",
-          "coordinates": [
-            -89.40657788431264,
-            43.07120884287952
-          ]
+        "coordinates": [
+          -89.40657788431264,
+          43.07120884287952
+        ]
       }
     },
     {
@@ -136,10 +136,10 @@
       },
       "geometry": {
         "type": "Point",
-          "coordinates": [
-            -89.39998013360604,
-            43.076333601791
-          ]
+        "coordinates": [
+          -89.39998013360604,
+          43.076333601791
+        ]
       }
     },
     {
@@ -156,10 +156,10 @@
       },
       "geometry": {
         "type": "Point",
-          "coordinates": [
-            -89.41125507239052,
-            43.07658215508638
-          ]
+        "coordinates": [
+          -89.41125507239052,
+          43.07658215508638
+        ]
       }
     },
     {
@@ -176,10 +176,10 @@
       },
       "geometry": {
         "type": "Point",
-          "coordinates": [
-            -89.41199707424346,
-            43.075435566639236
-          ]
+        "coordinates": [
+          -89.41199707424346,
+          43.075435566639236
+        ]
       }
     },
     {
@@ -196,10 +196,10 @@
       },
       "geometry": {
         "type": "Point",
-          "coordinates": [
-            -89.41347060307969,
-            43.07281679476806
-          ]
+        "coordinates": [
+          -89.41347060307969,
+          43.07281679476806
+        ]
       }
     },
     {
@@ -216,10 +216,10 @@
       },
       "geometry": {
         "type": "Point",
-          "coordinates": [
-            -89.40345838295234,
-            43.07190222742661
-          ]
+        "coordinates": [
+          -89.40345838295234,
+          43.07190222742661
+        ]
       }
     },
     {
@@ -236,10 +236,10 @@
       },
       "geometry": {
         "type": "Point",
-          "coordinates": [
-            -89.4024007451748,
-            43.0744782361519
-          ]
+        "coordinates": [
+          -89.4024007451748,
+          43.0744782361519
+        ]
       }
     },
     {
@@ -256,10 +256,10 @@
       },
       "geometry": {
         "type": "Point",
-          "coordinates": [
-            -89.41113180662325,
-            43.07498125171187
-          ]
+        "coordinates": [
+          -89.41113180662325,
+          43.07498125171187
+        ]
       }
     },
     {
@@ -276,10 +276,10 @@
       },
       "geometry": {
         "type": "Point",
-          "coordinates": [
-            -89.40891966075179,
-            43.07562965569542
-          ]
+        "coordinates": [
+          -89.40891966075179,
+          43.07562965569542
+        ]
       }
     },
     {
@@ -296,10 +296,10 @@
       },
       "geometry": {
         "type": "Point",
-          "coordinates": [
-            -89.40681497239078,
-            43.07087564660019
-          ]
+        "coordinates": [
+          -89.40681497239078,
+          43.07087564660019
+        ]
       }
     },
     {
@@ -316,10 +316,10 @@
       },
       "geometry": {
         "type": "Point",
-          "coordinates": [
-            -89.41117470122671,
-            43.074256408224855
-          ]
+        "coordinates": [
+          -89.41117470122671,
+          43.074256408224855
+        ]
       }
     },
     {
@@ -336,10 +336,10 @@
       },
       "geometry": {
         "type": "Point",
-          "coordinates": [
-            -89.39874291286556,
-            43.07395551968666
-          ]
+        "coordinates": [
+          -89.39874291286556,
+          43.07395551968666
+        ]
       }
     },
     {
@@ -356,10 +356,10 @@
       },
       "geometry": {
         "type": "Point",
-          "coordinates": [
-            -89.4028934131458,
-            43.077249372825285
-          ]
+        "coordinates": [
+          -89.4028934131458,
+          43.077249372825285
+        ]
       }
     },
     {
@@ -376,10 +376,10 @@
       },
       "geometry": {
         "type": "Point",
-          "coordinates": [
-            -89.40105486719271,
-            43.07592062094711
-          ]
+        "coordinates": [
+          -89.40105486719271,
+          43.07592062094711
+        ]
       }
     },
     {
@@ -396,15 +396,15 @@
       },
       "geometry": {
         "type": "Point",
-          "coordinates": [
-            -89.40215155173054,
-            43.07441123718972
-          ]
+        "coordinates": [
+          -89.40215155173054,
+          43.07441123718972
+        ]
       }
     },
     {
       "type": "Feature",
-      "properties":{
+      "properties": {
         "id": 21,
         "name": "Student Print",
         "building": "East Campus Mall",
@@ -424,7 +424,7 @@
     },
     {
       "type": "Feature",
-      "properties":{
+      "properties": {
         "id": 22,
         "name": "Picnic Tables - Geological Sciences",
         "building": "Geological Sciences",
@@ -444,7 +444,7 @@
     },
     {
       "type": "Feature",
-      "properties":{
+      "properties": {
         "id": 23,
         "name": "Computer Science Patio",
         "building": "Computer Science Building",
@@ -464,7 +464,7 @@
     },
     {
       "type": "Feature",
-      "properties":{
+      "properties": {
         "id": 24,
         "name": "Geological Library",
         "building": "Geological Sciences",
@@ -482,9 +482,9 @@
         ]
       }
     },
-      {
+    {
       "type": "Feature",
-      "properties":{
+      "properties": {
         "id": 25,
         "name": "Biochemistry 4th Floor Kitchen",
         "building": "Biochemical Sciences Building",
@@ -502,9 +502,9 @@
         ]
       }
     },
-      {
+    {
       "type": "Feature",
-      "properties":{
+      "properties": {
         "id": 26,
         "name": "Kohler Art Library",
         "building": "Conrad A. Elvejem Building",
@@ -524,7 +524,7 @@
     },
     {
       "type": "Feature",
-      "properties":{
+      "properties": {
         "id": 27,
         "name": "Business School Library",
         "building": "School of Business",
@@ -544,7 +544,7 @@
     },
     {
       "type": "Feature",
-      "properties":{
+      "properties": {
         "id": 28,
         "name": "Chem Commons 2nd Floor",
         "building": "Chemistry Building",
@@ -564,7 +564,7 @@
     },
     {
       "type": "Feature",
-      "properties":{
+      "properties": {
         "id": 29,
         "name": "SOHE Badger Market",
         "building": "School of Human Ecology",
@@ -584,7 +584,7 @@
     },
     {
       "type": "Feature",
-      "properties":{
+      "properties": {
         "id": 30,
         "name": "4th Floor Sterling Hall",
         "building": "Sterling Hall",
@@ -604,7 +604,7 @@
     },
     {
       "type": "Feature",
-      "properties":{
+      "properties": {
         "id": 31,
         "name": "7th Floor Sterling Hall",
         "building": "Sterling Hall",
@@ -624,7 +624,7 @@
     },
     {
       "type": "Feature",
-      "properties":{
+      "properties": {
         "id": 32,
         "name": "3rd Floor Physics Lounge",
         "building": "Sterling Hall",
@@ -644,7 +644,7 @@
     },
     {
       "type": "Feature",
-      "properties":{
+      "properties": {
         "id": 33,
         "name": "3rd Floor Sterling",
         "building": "Sterling Hall",
@@ -664,7 +664,7 @@
     },
     {
       "type": "Feature",
-      "properties":{
+      "properties": {
         "id": 34,
         "name": "1st Floor Sterling Lobby",
         "building": "Sterling Hall",
@@ -684,7 +684,7 @@
     },
     {
       "type": "Feature",
-      "properties":{
+      "properties": {
         "id": 35,
         "name": "5th Floor Education Science Colab Space Standing Desk Workspace",
         "building": "Educational Sciences",
@@ -704,7 +704,7 @@
     },
     {
       "type": "Feature",
-      "properties":{
+      "properties": {
         "id": 36,
         "name": "Map Library at Science Hall",
         "building": "Science Hall",
@@ -724,7 +724,7 @@
     },
     {
       "type": "Feature",
-      "properties":{
+      "properties": {
         "id": 37,
         "name": "1410 Engineering Drive Study Room",
         "building": "Engineering Hall",
@@ -744,7 +744,7 @@
     },
     {
       "type": "Feature",
-      "properties":{
+      "properties": {
         "id": 38,
         "name": "6th Floor Physics Lounge",
         "building": "Sterling Hall",
@@ -764,7 +764,7 @@
     },
     {
       "type": "Feature",
-      "properties":{
+      "properties": {
         "id": 39,
         "name": "Law Building Basement",
         "building": "Law School",
@@ -784,7 +784,7 @@
     },
     {
       "type": "Feature",
-      "properties":{
+      "properties": {
         "id": 40,
         "name": "CS Front Lobby",
         "building": "Computer Science Building",
@@ -799,6 +799,206 @@
         "coordinates": [
           -89.4053,
           43.0747
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 41,
+        "name": "ME Back Lobby",
+        "building": "Mechanical Engineering Building",
+        "description": "Standard study spot with nice lighting",
+        "rating": "Medium Tier",
+        "noise_level": "moderate",
+        "occupancy": "medium",
+        "photo": "img/mebacklobby.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4124,
+          43.0734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 42,
+        "name": "Bascom Basement",
+        "building": "Bascom Hall",
+        "description": "Study area for first generation college students. Nice, quieter spot",
+        "rating": "Medium Tier",
+        "noise_level": "quiet",
+        "occupancy": "medium",
+        "photo": "img/bascombasement.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4041,
+          43.0751
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 43,
+        "name": "4th Floor Sterling Hall",
+        "building": "Sterling Hall",
+        "description": "Quiet spot with an okay view",
+        "rating": "Medium Tier",
+        "noise_level": "low",
+        "occupancy": "low",
+        "photo": "img/4thfloorsterling.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4062,
+          43.0746
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 44,
+        "name": "ME Atrium",
+        "building": "Mechanical Engineering Building",
+        "description": "Decent study space but usually crowded and somewhat dark",
+        "rating": "Medium Tier",
+        "noise_level": "moderate",
+        "occupancy": "medium",
+        "photo": "img/meatrium.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4124,
+          43.0734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 45,
+        "name": "Education Building Pods",
+        "building": "Educational Sciences",
+        "description": "Usually empty and a really nice, quiet spot",
+        "rating": "Top Tier",
+        "noise_level": "low",
+        "occupancy": "low",
+        "photo": "img/educationbuildingpods.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4023,
+          43.0757
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 46,
+        "name": "Geological Sciences 3rd Floor Tables",
+        "building": "Geological Sciences",
+        "description": "Basic desk and table setup with nothing notable",
+        "rating": "Medium Tier",
+        "noise_level": "low",
+        "occupancy": "low",
+        "photo": "img/deskandpicnictableingeologicalsciences3rdfloor.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4044,
+          43.0718
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 47,
+        "name": "Biotech Patio",
+        "building": "Biotechnology Center",
+        "description": "4th floor patio that would be a better spot if seating was available",
+        "rating": "Low Tier",
+        "noise_level": "low",
+        "occupancy": "low",
+        "photo": "img/biotechpatio.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4069,
+          43.0754
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 48,
+        "name": "Penn Room",
+        "building": "Henry Taylor Hall",
+        "description": "Nice lounge space with comfortable seating",
+        "rating": "High Tier",
+        "noise_level": "low",
+        "occupancy": "low",
+        "photo": "img/henrytaylorthallpennroom.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4053,
+          43.0738
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 49,
+        "name": "Education Science Lobby Cells",
+        "building": "Educational Sciences",
+        "description": "Some spots get good sunlight but it is usually busy",
+        "rating": "Medium Tier",
+        "noise_level": "moderate",
+        "occupancy": "high",
+        "photo": "img/educationsciencelobbycells.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4018,
+          43.0733
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 50,
+        "name": "Business School Balconies (3rd–5th Floor)",
+        "building": "School of Business",
+        "description": "Balcony study spots that are usually full",
+        "rating": "Medium Tier",
+        "noise_level": "moderate",
+        "occupancy": "high",
+        "photo": "img/businessbalconies.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4016,
+          43.0729
         ]
       }
     }
