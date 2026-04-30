@@ -205,7 +205,7 @@
       "type": "Feature",
       "properties": {
         "id": 11,
-        "name": "Top floor of education sciences",
+        "name": "Top Floor of Education Sciences",
         "building": "Educational Sciences",
         "description": "Pretty dead and insane 270 degree view of Madison",
         "rating": "Top Tier",
@@ -267,7 +267,7 @@
         "id": 14,
         "name": "Sohe patio",
         "building": "School of Human Ecology",
-        "description": "Probably nice on a nice day",
+        "description": "Probably nice on a great day",
         "rating": "Top Tier",
         "noise_level": null,
         "occupancy": null,
@@ -399,6 +399,406 @@
             -89.40215155173054,
             43.07441123718972
           ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties":{
+        "id": 21,
+        "name": "Student Print",
+        "building": "East Campus Mall",
+        "description": "spacious area with good seating and casual atmosphere",
+        "rating": "Top Tier",
+        "noise_level": "moderate",
+        "occupancy": "medium",
+        "photo": "img/StudentPrint.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.395,
+          43.075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties":{
+        "id": 22,
+        "name": "Picnic Tables - Geological Sciences",
+        "building": "Geological Sciences",
+        "description": "Outdoor seating area, best in good weather",
+        "rating": "Medium Tier",
+        "noise_level": "low",
+        "occupancy": "low",
+        "photo": "img/picnictablesgeological.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4035,
+          43.0755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties":{
+        "id": 23,
+        "name": "Computer Science Patio",
+        "building": "Computer Science Building",
+        "description": "Two-level outdoor seating area with casual study vibe",
+        "rating": "Medium Tier",
+        "noise_level": "moderate",
+        "occupancy": "medium",
+        "photo": "img/CSPatio"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4035,
+          43.0755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties":{
+        "id": 24,
+        "name": "Geological Library",
+        "building": "Geological Sciences",
+        "description": "Library space with standing desk and quiet atmosphere",
+        "rating": "Medium Tier",
+        "noise_level": "low",
+        "occupancy": "low",
+        "photo": "img/geologicalLibrary.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4035,
+          43.0755
+        ]
+      }
+    },
+      {
+      "type": "Feature",
+      "properties":{
+        "id": 25,
+        "name": "Biochemistry 4th Floor Kitchen",
+        "building": "Biochemical Sciences Building",
+        "description": "Lively study space with good views and social atmosphere",
+        "rating": "Medium Tier",
+        "noise_level": "moderate",
+        "occupancy": "medium",
+        "photo": "img/biochem4thfloorkitchen.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4112,
+          43.0743
+        ]
+      }
+    },
+      {
+      "type": "Feature",
+      "properties":{
+        "id": 26,
+        "name": "Kohler Art Library",
+        "building": "Conrad A. Elvejem Building",
+        "description": "Nice place that is also close to the Humanities building",
+        "rating": "Medium Tier",
+        "noise_level": "low",
+        "occupancy": "medium",
+        "photo": "img/kohlerartlibrary.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4012,
+          43.0769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties":{
+        "id": 27,
+        "name": "Business School Library",
+        "building": "School of Business",
+        "description": "Nice building with a cool atmosphere",
+        "rating": "Medium Tier",
+        "noise_level": "low",
+        "occupancy": "high",
+        "photo": "img/businessSchoolLibrary.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4008,
+          43.0738
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties":{
+        "id": 28,
+        "name": "Chem Commons 2nd Floor",
+        "building": "Chemistry Building",
+        "description": "Pleasant but busy",
+        "rating": "Medium Tier",
+        "noise_level": "low",
+        "occupancy": "moderate",
+        "photo": "img/chemCommons2ndFloor.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4065,
+          43.0736
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties":{
+        "id": 29,
+        "name": "SOHE Badger Market",
+        "building": "School of Human Ecology",
+        "description": "Located at the 2nd floor, quite busy",
+        "rating": "Medium Tier",
+        "noise_level": "moderate",
+        "occupancy": "high",
+        "photo": "img/SOHEBadgerMarket.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4065,
+          43.0736
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties":{
+        "id": 30,
+        "name": "4th Floor Sterling Hall",
+        "building": "Sterling Hall",
+        "description": "Quiet Spot with okay view",
+        "rating": "Medium Tier",
+        "noise_level": "low",
+        "occupancy": "low",
+        "photo": "img/4thFloorSterling.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4062,
+          43.0746
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties":{
+        "id": 31,
+        "name": "7th Floor Sterling Hall",
+        "building": "Sterling Hall",
+        "description": "Nice spot with okay view",
+        "rating": "Medium Tier",
+        "noise_level": "low",
+        "occupancy": "low",
+        "photo": "img/7thFloorSterling.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4062,
+          43.0746
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties":{
+        "id": 32,
+        "name": "3rd Floor Physics Lounge",
+        "building": "Sterling Hall",
+        "description": "Standard Study Area",
+        "rating": "Medium Tier",
+        "noise_level": "low",
+        "occupancy": "medium",
+        "photo": "img/3rdFloorPhysicsLounge.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4062,
+          43.0746
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties":{
+        "id": 33,
+        "name": "3rd Floor Sterling",
+        "building": "Sterling Hall",
+        "description": "Nice window area",
+        "rating": "Medium Tier",
+        "noise_level": "low",
+        "occupancy": "medium",
+        "photo": "img/3rdFloorSterling.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4062,
+          43.0746
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties":{
+        "id": 34,
+        "name": "1st Floor Sterling Lobby",
+        "building": "Sterling Hall",
+        "description": "Very busy, but can be good in a pinch",
+        "rating": "Medium Tier",
+        "noise_level": "high",
+        "occupancy": "high",
+        "photo": "img/sterling1stFloorLobby.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4062,
+          43.0746
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties":{
+        "id": 35,
+        "name": "5th Floor Education Science Colab Space Standing Desk Workspace",
+        "building": "Educational Sciences",
+        "description": "Nice startup place with standing desks and study pods. Very modern and not many people.",
+        "rating": "Medium Tier",
+        "noise_level": "moderate",
+        "occupancy": "low",
+        "photo": "img/5thFloorEducationScienceColab.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4016,
+          43.0749
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties":{
+        "id": 36,
+        "name": "Map Library at Science Hall",
+        "building": "Science Hall",
+        "description": "Quaint",
+        "rating": "Medium Tier",
+        "noise_level": "low",
+        "occupancy": "moderate",
+        "photo": "img/maplibrarysciencehall.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40105486719271,
+          43.07592062094711
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties":{
+        "id": 37,
+        "name": "1410 Engineering Drive Study Room",
+        "building": "Engineering Hall",
+        "description": "Roomy, pretty empty",
+        "rating": "Medium Tier",
+        "noise_level": "low",
+        "occupancy": "low",
+        "photo": "img/1410EngineeringDriveStudyRoom.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4116,
+          43.0725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties":{
+        "id": 38,
+        "name": "6th Floor Physics Lounge",
+        "building": "Sterling Hall",
+        "description": "Nice room with comfortable chairs",
+        "rating": "Medium Tier",
+        "noise_level": "low",
+        "occupancy": "low",
+        "photo": "img/6thFloorPhysicsLounge.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4116,
+          43.0749
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties":{
+        "id": 39,
+        "name": "Law Building Basement",
+        "building": "Law School",
+        "description": "Nice space with ping pong table",
+        "rating": "High Tier",
+        "noise_level": "moderate",
+        "occupancy": "moderate",
+        "photo": "img/lawbuildingbasement.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4024007451748,
+          43.0744782361519
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties":{
+        "id": 40,
+        "name": "CS Front Lobby",
+        "building": "Computer Science Building",
+        "description": "Nice space with nice lighting",
+        "rating": "Medium Tier",
+        "noise_level": "moderate",
+        "occupancy": "low",
+        "photo": "img/csFrontLobby.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4053,
+          43.0747
+        ]
       }
     }
   ]
