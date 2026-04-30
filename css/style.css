@@ -1,46 +1,456 @@
+/* Global Styles & Base Setup */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+html,
+body {
     width: 100%;
+    height: 100%;
+    margin: 0;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e8edf2;
+    overflow: hidden; /* Prevent page scrolling */
+}
+
+/* Layout Containers */
+.app-shell {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Map container: Fills entire window */
 #map {
     width: 100%;
     height: 100%;
 }
 
-.leaflet-popup-content-wrapper {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+/* Left Control Panel (Search & Filters) */
+.control-panel {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    width: min(340px, calc(100vw - 40px)); /* Responsive width */
+    max-height: calc(100vh - 40px);
+    overflow: auto;
+    padding: 18px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    box-shadow: 0 16px 40px rgba(25, 42, 70, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.65);
 }
 
-.popup-content {
-    font-family: Arial, sans-serif;
+/* Panel title */
+.panel-header h1 {
+    margin: 0;
+    font-size: 28px;
+    line-height: 1.1;
+    color: #182433;
+}
+
+/* Category label */
+.eyebrow {
+    margin: 0 0 6px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #4f6b84;
+}
+
+/* Panel description text */
+.panel-copy {
+    margin: 10px 0 18px;
     font-size: 13px;
     line-height: 1.5;
+    color: #5b6b7d;
 }
 
-.popup-content h3 {
-    margin: 0 0 8px 0;
-    font-size: 16px;
-    color: #333;
+/* Control Groups (Search box, Filters) */
+.control-group {
+    display: block;
+    margin-bottom: 16px;
 }
 
-.popup-content p {
-    margin: 4px 0;
-    color: #666;
-}
-
-.popup-content img {
-    width: 250px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 4px;
+/* Control group title (Search, Hours, Noise Level, etc) */
+.control-title {
+    display: block;
     margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #304355;
+}
+
+/* Search Input */
+
+#search-input {
+    width: 100%;
+    border: 1px solid #c8d3dd;
+    border-radius: 12px;
+    padding: 11px 12px;
+    font-size: 14px;
+    outline: none;
+    background: #fff;
+}
+
+#search-input:focus {
+    border-color: #4f7ea8;
+    box-shadow: 0 0 0 3px rgba(79, 126, 168, 0.14); /* Blue glow on focus */
+}
+
+/* Time Range Slider (Hours) */
+
+.slider-row {
+    display: grid;
+    gap: 10px;
+}
+
+/* Slider container: Contains two range inputs */
+.range-sliders {
+    position: relative;
+    height: 28px;
+    display: flex;
+    align-items: center;
+}
+
+/* Slider track background */
+.range-sliders::before {
+    content: '';
+    position: absolute;
+    left: 9px;
+    right: 9px;
+    height: 4px;
+    background: #d0d8e0;
+    border-radius: 2px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Dual-slider base styles */
+.range-slider {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: transparent;
+    pointer-events: none;
+    -webkit-appearance: none;
+    appearance: none;
+    z-index: 2;
+}
+
+/* Slider thumb - Webkit browsers */
+.range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #2f4f6f;
+    cursor: pointer;
+    pointer-events: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 2px solid white;
+}
+
+/* Slider thumb - Firefox */
+.range-slider::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #2f4f6f;
+    cursor: pointer;
+    pointer-events: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 2px solid white;
+}
+
+/* Slider thumb hover effect */
+.range-slider::-webkit-slider-thumb:hover {
+    background: #1f3f5f;
+}
+
+.range-slider::-moz-range-thumb:hover {
+    background: #1f3f5f;
+}
+
+/* Start time slider has higher z-index priority */
+.range-start {
+    z-index: 5;
+}
+
+/* End time slider has lower z-index priority */
+.range-end {
+    z-index: 4;
+}
+
+/* Time label display (12:00 AM - 11:00 PM) */
+.slider-labels {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 500;
+    color: #182433;
+}
+
+/* Checkbox Lists (Noise Level, Occupancy) */
+.checkbox-list {
+    display: grid;
+    gap: 8px;
+}
+
+/* Checkbox chip styling */
+.checkbox-chip {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border: 1px solid #d8e1e8;
+    border-radius: 12px;
+    background: #f9fbfc;
+    cursor: pointer;
+    transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.checkbox-chip:hover {
+    transform: translateY(-1px);
+    border-color: #b8c7d4;
+    background: #ffffff;
+}
+
+.checkbox-chip input {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+}
+
+/* Checkbox label text */
+.chip-label {
+    flex: 1;
+    font-size: 14px;
+    color: #223042;
+}
+
+/* Color swatch: Represents marker color coding */
+.chip-swatch {
+    width: 12px;
+    height: 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.occupancy-chip .chip-swatch {
+    width: 12px;
+    height: 12px;
+    border-radius: 999px;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.24);
+}
+
+/* Panel Footer (Result Count / Reset Button) */
+
+.panel-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-top: 8px;
+    border-top: 1px solid #e4e8ee;
+    color: #526375;
+    font-size: 13px;
+}
+
+/* Reset button */
+#reset-filters {
+    border: none;
+    border-radius: 999px;
+    padding: 9px 14px;
+    background: #253544;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#reset-filters:hover {
+    background: #182433;
+}
+
+/* Study Spot marker circle */
+.spot-marker {
+    border: 2px solid #fff;
+    box-shadow: 0 6px 18px rgba(18, 29, 43, 0.25);
+}
+
+/* Popup window styling */
+.study-popup .leaflet-popup-content-wrapper {
+    padding: 0;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0 22px 50px rgba(25, 42, 70, 0.28);
+}
+
+.study-popup .leaflet-popup-content {
+    margin: 0;
+    width: auto !important;
+}
+
+.study-popup .leaflet-popup-tip {
+    background: #ffffff;
+}
+
+.study-popup .leaflet-popup-close-button {
+    color: #415161;
+    font-size: 18px;
+    padding: 6px 8px 0 0;
+}
+
+/* ========================================
+   Popup Card Content
+   ======================================== */
+
+.popup-card {
+    width: 320px;
+    max-width: 100%;
+    padding: 16px;
+    color: #1f2b38;
+}
+
+/* Popup header: Title + Rating */
+.popup-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+/* Popup sub-title (STUDY SPOT) */
+.popup-kicker {
+    margin: 0 0 4px;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #6b7f93;
+}
+
+.popup-card h3 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #13202f;
+}
+
+/* Rating badge (Top Tier, etc) */
+.rating-pill {
+    flex: 0 0 auto;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: #eef4fa;
+    color: #2f4f6f;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* Popup image */
+.popup-photo {
+    display: block;
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    margin: 10px 0 12px;
+    border-radius: 14px;
+    background: #edf2f7;
+}
+
+/* Building name */
+.popup-building {
+    margin: 0 0 8px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #39506a;
+}
+
+/* Reviewer's note */
+.popup-description {
+    margin: 0 0 14px;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #516273;
+}
+
+.popup-description strong {
+    color: #223042;
+}
+
+/* Popup Metadata Grid (Hours, Noise, Occupancy) */
+
+.popup-meta-grid {
+    display: grid;
+    gap: 10px;
+}
+
+/* Metadata item container */
+.popup-meta-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    background: #f7f9fc;
+}
+
+/* Metadata label (Hours, Noise, Occupancy) */
+.popup-meta-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #7a8b9b;
+}
+
+/* Metadata value */
+.popup-meta-value {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #233243;
+    text-align: right;
+}
+
+/* Color dot (Displays occupancy color) */
+.meta-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.meta-dot-occupancy {
+    border-radius: 999px;
+}
+
+.meta-dot-noise {
+    display: none;
+}
+
+@media (max-width: 720px) {
+    .control-panel {
+        left: 12px;
+        right: 12px;
+        width: auto;
+        max-height: 44vh;
+    }
 }

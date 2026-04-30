@@ -4,17 +4,79 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Spots Map</title>
-    
-    <!-- Leaflet -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-    
-    <link rel="stylesheet" href="css/style.css">
-</head>
 
+    <!-- Leaflet CSS: Map display library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+    <!-- Leaflet MarkerCluster CSS: Clustering markers functionality -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.1/MarkerCluster.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.1/MarkerCluster.Default.min.css">
+    <!-- Custom styling -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Leaflet JavaScript library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <!-- Leaflet MarkerCluster JS library: Auto-groups nearby markers -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.1/leaflet.markercluster.min.js"></script>
+</head>
 <body>
-    <div id="map"></div>
-    
+    <!-- Main container: Contains control panel and map -->
+    <div class="app-shell">
+        <!-- Left sidebar control panel: Search and filter functionality -->
+        <aside class="control-panel">
+            <!-- Panel title section -->
+            <div class="panel-header">
+                <p class="eyebrow">UW-Madison</p>
+                <h1>Study Spots</h1>
+                <p class="panel-copy">Search and filter the spots, then click markers on the map for details.</p>
+            </div>
+
+            <!-- Search box: Search by name, building, description -->
+            <label class="control-group">
+                <span class="control-title">Search</span>
+                <input id="search-input" type="search" placeholder="Name, building, description">
+            </label>
+
+            <!-- Time range selector: Dual-slider for operating hours -->
+            <div class="control-group">
+                <span class="control-title">Hours</span>
+                <div class="slider-row">
+                    <div class="range-sliders">
+                        <!-- Start time slider (0-23 hours) -->
+                        <input id="hours-start" type="range" min="0" max="23" step="1" value="0" class="range-slider range-start">
+                        <!-- End time slider (0-23 hours) -->
+                        <input id="hours-end" type="range" min="0" max="23" step="1" value="23" class="range-slider range-end">
+                    </div>
+                    <!-- Display selected time range (AM/PM format) -->
+                    <div class="slider-labels">
+                        <span id="hours-start-label">12:00 AM</span>
+                        <span id="hours-end-label">11:00 PM</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Noise level filter: Multi-select checkboxes (Quiet/Moderate/Busy) -->
+            <div class="control-group">
+                <span class="control-title">Noise level</span>
+                <div id="noise-filters" class="checkbox-list"></div>
+            </div>
+
+            <!-- Occupancy filter: Multi-select checkboxes with color coding (Open/Medium/Full) -->
+            <div class="control-group">
+                <span class="control-title">Occupancy</span>
+                <div id="occupancy-filters" class="checkbox-list"></div>
+            </div>
+
+            <!-- Footer: Result count and reset button -->
+            <div class="panel-footer">
+                <span id="results-count">0 spots</span>
+                <button id="reset-filters" type="button">Reset</button>
+            </div>
+        </aside>
+
+        <!-- Map container: Leaflet renders the map inside this div -->
+        <main id="map"></main>
+    </div>
+
+    <!-- Main application JavaScript file -->
     <script src="js/main.js"></script>
 </body>
 </html>

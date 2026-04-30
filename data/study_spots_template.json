@@ -9,8 +9,9 @@
         "building": "Memorial Union",
         "description": "Cmon now do i need to explain",
         "rating": "Top Tier",
-        "noise_level": null,
-        "occupancy": null,
+        "noise_level": "moderate",
+        "occupancy": "high",
+        "hours": "6:00 - 20:00",
         "photo": "img/Memorial Union Terrace.jpg"
       },
       "geometry": {
@@ -707,7 +708,7 @@
         "id": 36,
         "name": "Map Library at Science Hall",
         "building": "Science Hall",
-        "description": "Quaint",
+        "description": "Quiet",
         "rating": "Medium Tier",
         "noise_level": "low",
         "occupancy": "moderate",
