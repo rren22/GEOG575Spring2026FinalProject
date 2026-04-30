@@ -366,8 +366,8 @@
       "type": "Feature",
       "properties": {
         "id": 19,
-        "name": "Science hall corner",
-        "building": "Science hall",
+        "name": "Science Hall corner",
+        "building": "Science Hall",
         "description": "Cute spot",
         "rating": "Medium Tier",
         "noise_level": null,
@@ -452,7 +452,7 @@
         "rating": "Medium Tier",
         "noise_level": "moderate",
         "occupancy": "medium",
-        "photo": "img/CSPatio"
+        "photo": "img/CSPatio.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -999,6 +999,226 @@
         "coordinates": [
           -89.4016,
           43.0729
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 51,
+        "name": "CDIS Study Spaces (Basement - 7th Floor)",
+        "building": "Morgridge Hall",
+        "description": "Plenty of study spaces around the area with Peet's Cofee on the 1st Floor",
+        "rating": "Medium Tier",
+        "noise_level": "moderate",
+        "occupancy": "high",
+        "photo": "img/CDISImage.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4066918,
+          43.0729858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 52,
+        "name": "Rooftop of CDIS Building",
+        "building": "Morgridge Hall",
+        "description": "Located at the 7th floor, nice on a sunny day",
+        "rating": "Medium Tier",
+        "noise_level": "moderate",
+        "occupancy": "high",
+        "photo": "img/CDISRooftop.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4069155,
+          43.0723788
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 52,
+        "name": "Rooftop of CDIS Building",
+        "building": "Morgridge Hall",
+        "description": "Located at the 7th floor, nice on a sunny day",
+        "rating": "Medium Tier",
+        "noise_level": "moderate",
+        "occupancy": "high",
+        "photo": "img/CDISRooftop.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4069155,
+          43.0723788
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 53,
+        "name": "Ingraham First Floor",
+        "building": "Ingraham Hall",
+        "description": "Really beat and super full",
+        "rating": "Medium Tier",
+        "noise_level": "high",
+        "occupancy": "high",
+        "photo": "img/ingraham1stfloor.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4055094,
+          43.0757736
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 54,
+        "name": "Biochem 1st Floor Lobby",
+        "building": "Biochemical Sciences Building",
+        "description": "Horrible compared to places in the same area. Super busy too.",
+        "rating": "Low Tier",
+        "noise_level": "moderate",
+        "occupancy": "high",
+        "photo": "img/biochem1stfloorlobby.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.41117470122671,
+          43.0742564028224855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 55,
+        "name": "Union South Study Spaces",
+        "building": "Union South",
+        "description": "Crowded space, but nice spot for food",
+        "rating": "Medium Tier",
+        "noise_level": "high",
+        "occupancy": "high",
+        "photo": "img/unionsouth.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4082345,
+          43.0720343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 56,
+        "name": "Ingraham G Floor",
+        "building": "Ingraham Hall",
+        "description": "Busy and not that nice",
+        "rating": "Low Tier",
+        "noise_level": "high",
+        "occupancy": "high",
+        "photo": "img/ingrahamGFloor.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4055094,
+          43.0757736
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 57,
+        "name": "First Floor of Russell Labs",
+        "building": "Russell Labs Adminstrative Hub",
+        "description": "Sucks, but nicer thatn the basement",
+        "rating": "Low Tier",
+        "noise_level": "high",
+        "occupancy": "high",
+        "photo": "img/firstfloorRussellLab.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4134575,
+          43.0754754
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 58,
+        "name": "Basement of Elvehjem Building",
+        "building": "Conrad A. Elvehjem Building",
+        "description": "Study in the Kohler Library instead.",
+        "rating": "Low Tier",
+        "noise_level": "moderate",
+        "occupancy": "moderate",
+        "photo": "img/basementofelevehjem.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4012,
+          43.0769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 59,
+        "name": "SOHE 3rd Floor Couch Area",
+        "building": "School of Human Ecology",
+        "description": "Nice area, but very busy.",
+        "rating": "High Tier",
+        "noise_level": "moderate",
+        "occupancy": "high",
+        "photo": "img/SOHE3rdFloorCouchArea.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40891966075179,
+          43.07562965569542
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 60,
+        "name": "One Floor Above Merit",
+        "building": "Merit Library",
+        "description": "Similar corner window vibe as Merit, but likely empty. No tables though.",
+        "rating": "Medium Tier",
+        "noise_level": "low",
+        "occupancy": "low",
+        "photo": "img/onefloorabovemerit.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40390106017479,
+          43.07138904662341
         ]
       }
     }
