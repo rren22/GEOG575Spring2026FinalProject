@@ -30,8 +30,9 @@
         "building": "Memorial Union",
         "description": "Super nice",
         "rating": "Top Tier",
-        "noise_level": null,
-        "occupancy": null,
+        "noise_level": "low",
+        "occupancy": "moderate",
+        "hours": "6:00 - 20:00",
         "photo": "img/Hamel Family Browsing Library.jpg"
       },
       "geometry": {
@@ -46,12 +47,13 @@
       "type": "Feature",
       "properties": {
         "id": 3,
-        "name": "Greenhouse benches",
+        "name": "Greenhouse Benches",
         "building": "Botany Garden",
         "description": "A classic",
         "rating": "Top Tier",
-        "noise_level": null,
-        "occupancy": null,
+        "noise_level": "low",
+        "occupancy": "moderate",
+        "hours": "8:00 - 16:00",
         "photo": "img/Greenhouse benches.jpg"
       },
       "geometry": {
@@ -66,12 +68,13 @@
       "type": "Feature",
       "properties": {
         "id": 4,
-        "name": "Merit library",
-        "building": "Merit library",
+        "name": "Merit Library",
+        "building": "Merit Library",
         "description": "Surprisingly nice chill library. Bean bag chairs are a plus",
         "rating": "Top Tier",
-        "noise_level": null,
-        "occupancy": null,
+        "noise_level": "low",
+        "occupancy": "moderate",
+        "hours": "8:00 - 21:00",
         "photo": "img/Merit library.jpg"
       },
       "geometry": {
@@ -86,12 +89,13 @@
       "type": "Feature",
       "properties": {
         "id": 5,
-        "name": "258 soils study area",
+        "name": "258 Soils Study Area",
         "building": "Soils Building",
         "description": "Cute area. Plants and bookshelves",
         "rating": "Top Tier",
-        "noise_level": null,
-        "occupancy": null,
+        "noise_level": "moderate",
+        "occupancy": "moderate",
+        "hours": "8:00 - 16:30",
         "photo": "img/258 soils study area.jpg"
       },
       "geometry": {
@@ -106,12 +110,13 @@
       "type": "Feature",
       "properties": {
         "id": 6,
-        "name": "6floor cs",
+        "name": "6th Floor CS",
         "building": "CS Building",
         "description": "Nice study lounge with a nice view. Smells good too",
         "rating": "Top Tier",
-        "noise_level": null,
-        "occupancy": null,
+        "noise_level": "low",
+        "occupancy": "low",
+        "hours": "8:00 - 16:30",
         "photo": "img/258 soils study area.jpg"
       },
       "geometry": {
@@ -126,12 +131,13 @@
       "type": "Feature",
       "properties": {
         "id": 7,
-        "name": "Memorial Union inside",
+        "name": "Memorial Union Inside",
         "building": "Memorial Union",
         "description": "pretty nice",
         "rating": "Top Tier",
-        "noise_level": null,
-        "occupancy": null,
+        "noise_level": "moderate",
+        "occupancy": "high",
+        "hours": "6:00 - 20:00",
         "photo": "img/Memorial Union inside.jpg"
       },
       "geometry": {
@@ -146,12 +152,13 @@
       "type": "Feature",
       "properties": {
         "id": 8,
-        "name": "Soils building 3rd floor lobby",
+        "name": "Soils Building 3rd Floor Lobby",
         "building": "Soils Building",
         "description": "Nice on a rainy day",
         "rating": "Top Tier",
-        "noise_level": null,
-        "occupancy": null,
+        "noise_level": "low",
+        "occupancy": "moderate",
+        "hours": "8:00 - 16:30",
         "photo": "img/Soils building 3rd floor lobby.jpg"
       },
       "geometry": {
@@ -166,12 +173,13 @@
       "type": "Feature",
       "properties": {
         "id": 9,
-        "name": "Microbio badger market",
+        "name": "Microbio Badger Market",
         "building": "Microbial Sciences Building",
         "description": "Nice and open",
         "rating": "Top Tier",
-        "noise_level": null,
-        "occupancy": null,
+        "noise_level": "moderate",
+        "occupancy": "high",
+        "hours": "7:00 - 19:00",
         "photo": "img/Microbio badger market.jpg"
       },
       "geometry": {
@@ -186,12 +194,13 @@
       "type": "Feature",
       "properties": {
         "id": 10,
-        "name": "Ecb lobby",
+        "name": "ECB Lobby",
         "building": "Engineering Centers Bldg",
         "description": "Pretty nice, spacious",
         "rating": "Top Tier",
-        "noise_level": null,
-        "occupancy": null,
+        "noise_level": "moderate",
+        "occupancy": "moderate",
+        "hours": "7:00 - 21:00",
         "photo": "img/Ecb lobby.jpg"
       },
       "geometry": {
@@ -210,8 +219,9 @@
         "building": "Educational Sciences",
         "description": "Pretty dead and insane 270 degree view of Madison",
         "rating": "Top Tier",
-        "noise_level": null,
-        "occupancy": null,
+        "noise_level": "low",
+        "occupancy": "moderate",
+        "hours": "7:45 - 16:30",
         "photo": "img/Top floor of education sciences.jpg"
       },
       "geometry": {
@@ -226,12 +236,13 @@
       "type": "Feature",
       "properties": {
         "id": 12,
-        "name": "Law school reading room",
+        "name": "Law School Reading Room",
         "building": "Law School",
         "description": "More cozy than the law school library",
         "rating": "Top Tier",
-        "noise_level": null,
-        "occupancy": null,
+        "noise_level": "low",
+        "occupancy": "low",
+        "hours": "7:00 - 19:00",
         "photo": "img/Law school reading room.jpg"
       },
       "geometry": {
@@ -246,12 +257,13 @@
       "type": "Feature",
       "properties": {
         "id": 13,
-        "name": "Bock labs penthouse",
+        "name": "Bock Labs Penthouse",
         "building": "Bock Laboratories",
         "description": "Pretty nice, quiet area",
         "rating": "Top Tier",
-        "noise_level": null,
-        "occupancy": null,
+        "noise_level": "low",
+        "occupancy": "moderate",
+        "hours": "7:00 - 16:30",
         "photo": "img/Bock labs penthouse.jpg"
       },
       "geometry": {
@@ -266,12 +278,13 @@
       "type": "Feature",
       "properties": {
         "id": 14,
-        "name": "Sohe patio",
+        "name": "SOHE Patio",
         "building": "School of Human Ecology",
         "description": "Probably nice on a great day",
         "rating": "Top Tier",
-        "noise_level": null,
-        "occupancy": null,
+        "noise_level": "low",
+        "occupancy": "moderate",
+        "hours": "7:00 - 20:00",
         "photo": "img/Sohe patio.jpg"
       },
       "geometry": {
@@ -286,12 +299,13 @@
       "type": "Feature",
       "properties": {
         "id": 15,
-        "name": "14 floor aoss",
+        "name": "14 Floor AOSS",
         "building": "Atmospheric, Oceanic and Space Sciences",
         "description": "Nice space but no windows. They have puzzles tho",
         "rating": "Medium Tier",
-        "noise_level": null,
-        "occupancy": null,
+        "noise_level": "moderate",
+        "occupancy": "low",
+        "hours": "8:00 - 17:00",
         "photo": "img/14 floor aoss.jpg"
       },
       "geometry": {
@@ -306,12 +320,13 @@
       "type": "Feature",
       "properties": {
         "id": 16,
-        "name": "301 biochem",
+        "name": "301 Biochem",
         "building": "Biochemical Sciences Building",
         "description": "Nice study room area. Has separate breakout rooms",
         "rating": "Medium Tier",
-        "noise_level": null,
-        "occupancy": null,
+        "noise_level": "low",
+        "occupancy": "moderate",
+        "hours": "8:00 - 17:00",
         "photo": "img/301 biochem.jpg"
       },
       "geometry": {
@@ -326,12 +341,13 @@
       "type": "Feature",
       "properties": {
         "id": 17,
-        "name": "Chazen lobby",
+        "name": "Chazen Lobby",
         "building": "Chazen Museum of Art",
         "description": "Pretty nice. There’s a cafe",
         "rating": "Medium Tier",
-        "noise_level": null,
-        "occupancy": null,
+        "noise_level": "low",
+        "occupancy": "moderate",
+        "hours": "8:30 - 17:30",
         "photo": "img/Chazen lobby.jpg"
       },
       "geometry": {
@@ -346,12 +362,13 @@
       "type": "Feature",
       "properties": {
         "id": 18,
-        "name": "Limnology library",
+        "name": "Limnology Library",
         "building": "Hasler Laboratory of Limnology",
         "description": "Really nice and empty",
         "rating": "Medium Tier",
-        "noise_level": null,
-        "occupancy": null,
+        "noise_level": "low",
+        "occupancy": "low",
+        "hours": "8:00 - 16:30",
         "photo": "img/Limnology library.jpg"
       },
       "geometry": {
@@ -366,12 +383,13 @@
       "type": "Feature",
       "properties": {
         "id": 19,
-        "name": "Science Hall corner",
+        "name": "Science Hall Corner",
         "building": "Science Hall",
         "description": "Cute spot",
         "rating": "Medium Tier",
-        "noise_level": null,
-        "occupancy": null,
+        "noise_level": "low",
+        "occupancy": "low",
+        "hours": "6:00 - 21:00",
         "photo": "img/Science hall corner.jpg"
       },
       "geometry": {
@@ -386,12 +404,13 @@
       "type": "Feature",
       "properties": {
         "id": 20,
-        "name": "Law school 7th floor library",
+        "name": "Law School 7th Floor Library",
         "building": "Law School",
         "description": "Only usable after 2 pm",
         "rating": "Medium Tier",
-        "noise_level": null,
-        "occupancy": null,
+        "noise_level": "moderate",
+        "occupancy": "high",
+        "hours": "8:00 - 22:00",
         "photo": "img/Law school 7th floor library.jpg"
       },
       "geometry": {
@@ -412,6 +431,7 @@
         "rating": "Top Tier",
         "noise_level": "moderate",
         "occupancy": "medium",
+        "hours": "10:00 - 17:00",
         "photo": "img/StudentPrint.jpg"
       },
       "geometry": {
@@ -432,6 +452,7 @@
         "rating": "Medium Tier",
         "noise_level": "low",
         "occupancy": "low",
+        "hours": "9:00 - 17:00",
         "photo": "img/picnictablesgeological.jpg"
       },
       "geometry": {
@@ -452,6 +473,7 @@
         "rating": "Medium Tier",
         "noise_level": "moderate",
         "occupancy": "medium",
+        "hours": "7:00 - 18:00",
         "photo": "img/CSPatio.jpg"
       },
       "geometry": {
@@ -472,6 +494,7 @@
         "rating": "Medium Tier",
         "noise_level": "low",
         "occupancy": "low",
+        "hours": "9:00 - 17:00",
         "photo": "img/geologicalLibrary.jpg"
       },
       "geometry": {
@@ -492,6 +515,7 @@
         "rating": "Medium Tier",
         "noise_level": "moderate",
         "occupancy": "medium",
+        "hours": "8:00 - 17:00",
         "photo": "img/biochem4thfloorkitchen.jpg"
       },
       "geometry": {
@@ -512,6 +536,7 @@
         "rating": "Medium Tier",
         "noise_level": "low",
         "occupancy": "medium",
+        "hours": "9:00 - 19:00",
         "photo": "img/kohlerartlibrary.jpg"
       },
       "geometry": {
@@ -532,6 +557,7 @@
         "rating": "Medium Tier",
         "noise_level": "low",
         "occupancy": "high",
+        "hours": "8:00 - 19:00",
         "photo": "img/businessSchoolLibrary.jpg"
       },
       "geometry": {
@@ -552,6 +578,7 @@
         "rating": "Medium Tier",
         "noise_level": "low",
         "occupancy": "moderate",
+        "hours": "7:00 - 17:00",
         "photo": "img/chemCommons2ndFloor.jpg"
       },
       "geometry": {
@@ -572,6 +599,7 @@
         "rating": "Medium Tier",
         "noise_level": "moderate",
         "occupancy": "high",
+        "hours": "7:00 - 18:00",
         "photo": "img/SOHEBadgerMarket.jpg"
       },
       "geometry": {
@@ -592,6 +620,7 @@
         "rating": "Medium Tier",
         "noise_level": "low",
         "occupancy": "low",
+        "hours": "7:00 - 20:00",
         "photo": "img/4thFloorSterling.jpg"
       },
       "geometry": {
@@ -612,6 +641,7 @@
         "rating": "Medium Tier",
         "noise_level": "low",
         "occupancy": "low",
+        "hours": "7:00 - 20:00",
         "photo": "img/7thFloorSterling.jpg"
       },
       "geometry": {
@@ -632,6 +662,7 @@
         "rating": "Medium Tier",
         "noise_level": "low",
         "occupancy": "medium",
+        "hours": "7:00 - 20:00",
         "photo": "img/3rdFloorPhysicsLounge.jpg"
       },
       "geometry": {
@@ -652,6 +683,7 @@
         "rating": "Medium Tier",
         "noise_level": "low",
         "occupancy": "medium",
+        "hours": "7:00 - 20:00",
         "photo": "img/3rdFloorSterling.jpg"
       },
       "geometry": {
@@ -672,6 +704,7 @@
         "rating": "Medium Tier",
         "noise_level": "high",
         "occupancy": "high",
+        "hours": "7:00 - 20:00",
         "photo": "img/sterling1stFloorLobby.jpg"
       },
       "geometry": {
@@ -692,6 +725,7 @@
         "rating": "Medium Tier",
         "noise_level": "moderate",
         "occupancy": "low",
+        "hours": "7:45 - 16:30",
         "photo": "img/5thFloorEducationScienceColab.jpg"
       },
       "geometry": {
@@ -712,6 +746,7 @@
         "rating": "Medium Tier",
         "noise_level": "low",
         "occupancy": "moderate",
+        "hours": "8:00 - 20:00",
         "photo": "img/maplibrarysciencehall.jpg"
       },
       "geometry": {
@@ -732,6 +767,7 @@
         "rating": "Medium Tier",
         "noise_level": "low",
         "occupancy": "low",
+        "hours": "7:00 - 21:00",
         "photo": "img/1410EngineeringDriveStudyRoom.jpg"
       },
       "geometry": {
@@ -752,6 +788,7 @@
         "rating": "Medium Tier",
         "noise_level": "low",
         "occupancy": "low",
+        "hours": "7:00 - 20:00",
         "photo": "img/6thFloorPhysicsLounge.jpg"
       },
       "geometry": {
@@ -772,6 +809,7 @@
         "rating": "High Tier",
         "noise_level": "moderate",
         "occupancy": "moderate",
+        "hours": "8:00 - 22:00",
         "photo": "img/lawbuildingbasement.jpg"
       },
       "geometry": {
@@ -792,6 +830,7 @@
         "rating": "Medium Tier",
         "noise_level": "moderate",
         "occupancy": "low",
+        "hours": "7:45 - 18:00",
         "photo": "img/csFrontLobby.jpg"
       },
       "geometry": {
@@ -812,6 +851,7 @@
         "rating": "Medium Tier",
         "noise_level": "moderate",
         "occupancy": "medium",
+        "hours": "7:00 - 21:00",
         "photo": "img/mebacklobby.jpg"
       },
       "geometry": {
@@ -832,6 +872,7 @@
         "rating": "Medium Tier",
         "noise_level": "quiet",
         "occupancy": "medium",
+        "hours": "7:00 - 18:00",
         "photo": "img/bascombasement.jpg"
       },
       "geometry": {
@@ -852,6 +893,7 @@
         "rating": "Medium Tier",
         "noise_level": "low",
         "occupancy": "low",
+        "hours": "7:00 - 20:00",
         "photo": "img/4thfloorsterling.jpg"
       },
       "geometry": {
@@ -872,6 +914,7 @@
         "rating": "Medium Tier",
         "noise_level": "moderate",
         "occupancy": "medium",
+        "hours": "7:00 - 18:00",
         "photo": "img/meatrium.jpg"
       },
       "geometry": {
@@ -892,6 +935,7 @@
         "rating": "Top Tier",
         "noise_level": "low",
         "occupancy": "low",
+        "hours": "8:00 - 20:00",
         "photo": "img/educationbuildingpods.jpg"
       },
       "geometry": {
@@ -912,6 +956,7 @@
         "rating": "Medium Tier",
         "noise_level": "low",
         "occupancy": "low",
+        "hours": "9:00 - 17:00",
         "photo": "img/deskandpicnictableingeologicalsciences3rdfloor.jpg"
       },
       "geometry": {
@@ -932,6 +977,7 @@
         "rating": "Low Tier",
         "noise_level": "low",
         "occupancy": "low",
+        "hours": "9:00 - 17:00",
         "photo": "img/biotechpatio.jpg"
       },
       "geometry": {
@@ -952,6 +998,7 @@
         "rating": "High Tier",
         "noise_level": "low",
         "occupancy": "low",
+        "hours": "7:45 - 16:30",
         "photo": "img/henrytaylorthallpennroom.jpg"
       },
       "geometry": {
@@ -972,6 +1019,7 @@
         "rating": "Medium Tier",
         "noise_level": "moderate",
         "occupancy": "high",
+        "hours": "8:00 - 17:00",
         "photo": "img/educationsciencelobbycells.jpg"
       },
       "geometry": {
@@ -992,6 +1040,7 @@
         "rating": "Medium Tier",
         "noise_level": "moderate",
         "occupancy": "high",
+        "hours": "8:00 - 21:00",
         "photo": "img/businessbalconies.jpg"
       },
       "geometry": {
@@ -1009,9 +1058,10 @@
         "name": "CDIS Study Spaces (Basement - 7th Floor)",
         "building": "Morgridge Hall",
         "description": "Plenty of study spaces around the area with Peet's Cofee on the 1st Floor",
-        "rating": "Medium Tier",
+        "rating": "High Tier",
         "noise_level": "moderate",
         "occupancy": "high",
+        "hours": "7:00 - 19:00",
         "photo": "img/CDISImage.png"
       },
       "geometry": {
@@ -1032,26 +1082,7 @@
         "rating": "Medium Tier",
         "noise_level": "moderate",
         "occupancy": "high",
-        "photo": "img/CDISRooftop.jpg"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -89.4069155,
-          43.0723788
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 52,
-        "name": "Rooftop of CDIS Building",
-        "building": "Morgridge Hall",
-        "description": "Located at the 7th floor, nice on a sunny day",
-        "rating": "Medium Tier",
-        "noise_level": "moderate",
-        "occupancy": "high",
+        "hours": "7:00 - 19:00",
         "photo": "img/CDISRooftop.jpg"
       },
       "geometry": {
@@ -1072,6 +1103,7 @@
         "rating": "Medium Tier",
         "noise_level": "high",
         "occupancy": "high",
+        "hours": "9:00 - 17:00",
         "photo": "img/ingraham1stfloor.jpg"
       },
       "geometry": {
@@ -1092,6 +1124,7 @@
         "rating": "Low Tier",
         "noise_level": "moderate",
         "occupancy": "high",
+        "hours": "7:00 - 19:00",
         "photo": "img/biochem1stfloorlobby.jpg"
       },
       "geometry": {
@@ -1112,6 +1145,7 @@
         "rating": "Medium Tier",
         "noise_level": "high",
         "occupancy": "high",
+        "hours": "7:00 - 23:00",
         "photo": "img/unionsouth.jpg"
       },
       "geometry": {
@@ -1132,6 +1166,7 @@
         "rating": "Low Tier",
         "noise_level": "high",
         "occupancy": "high",
+        "hours": "9:00 - 17:00",
         "photo": "img/ingrahamGFloor.jpg"
       },
       "geometry": {
@@ -1152,6 +1187,7 @@
         "rating": "Low Tier",
         "noise_level": "high",
         "occupancy": "high",
+        "hours": "6:00 - 18:00",
         "photo": "img/firstfloorRussellLab.jpg"
       },
       "geometry": {
@@ -1172,6 +1208,7 @@
         "rating": "Low Tier",
         "noise_level": "moderate",
         "occupancy": "moderate",
+        "hours": "9:00 - 17:00",
         "photo": "img/basementofelevehjem.jpg"
       },
       "geometry": {
@@ -1192,6 +1229,7 @@
         "rating": "High Tier",
         "noise_level": "moderate",
         "occupancy": "high",
+        "hours": "7:00 - 20:00",
         "photo": "img/SOHE3rdFloorCouchArea.jpg"
       },
       "geometry": {
@@ -1212,6 +1250,7 @@
         "rating": "Medium Tier",
         "noise_level": "low",
         "occupancy": "low",
+        "hours": "8:00 - 21:00",
         "photo": "img/onefloorabovemerit.jpg"
       },
       "geometry": {
