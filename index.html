@@ -35,8 +35,15 @@
             <!-- Search box: Search by name, building, description -->
             <label class="control-group">
                 <span class="control-title">Search</span>
-                <input id="search-input" list="search-suggestions" type="search" placeholder="Name, building, description">
-                <datalist id="search-suggestions"></datalist>
+
+                    <input
+                        id="search-input"
+                        type="search"
+                        list="study-spots-list"
+                        placeholder="Search study spots..."
+                    >
+
+                    <datalist id="study-spots-list"></datalist>
             </label>
 
             <!-- Time range selector: Dual-slider for operating hours -->
