@@ -9,6 +9,7 @@ const map = L.map('map', {
     keyboard: true
 }).setView([43.073, -89.4], 16); // Center: Madison, Zoom level: 16
 
+
 // Add zoom control to top-right
 L.control.zoom({ position: 'topright' }).addTo(map);
 
@@ -438,6 +439,9 @@ fetch('data/study_spots_template.json')
 
         // Assign default values to null fields
         buildDummyMetadata(state.spots);
+
+        // Creat autofill suggestions
+        populateSearchSuggestions();
         
         // Initialize UI
         renderFilters();
@@ -453,3 +457,21 @@ fetch('data/study_spots_template.json')
         console.error('Error loading GeoJSON:', error);
         document.getElementById('results-count').textContent = 'Failed to load data';
     });
+// Populate autofill suggestions for search box
+function populateSearchSuggestions() {
+
+    const datalist = document.getElementById('study-spots-list');
+
+    // Get all unique spot names
+    const uniqueNames = [...new Set(
+        state.spots.map(spot => spot.name)
+    )];
+
+    // Generate suggestion options
+    datalist.innerHTML = uniqueNames.map(name => `
+        <option value="${escapeHtml(name)}"></option>
+    `).join('');
+}
+   
+    
+
