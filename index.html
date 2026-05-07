@@ -39,11 +39,11 @@
                     <input
                         id="search-input"
                         type="search"
-                        list="study-spots-list"
+                        list="search-suggestions"
                         placeholder="Search study spots..."
                     >
 
-                    <datalist id="study-spots-list"></datalist>
+                    <datalist id="search-suggestions"></datalist>
             </label>
 
             <!-- Time range selector: Dual-slider for operating hours -->
@@ -92,11 +92,11 @@
     <!-- Bottom-right feedback panel -->
     <aside class="feedback-panel" aria-label="Review and feedback">
         <p class="feedback-kicker">Review</p>
-        <h2>Our  ratings are personal notes</h2>
+        <h2>Our Ratings are Personal Notes</h2>
         <p class="feedback-copy">We score spots based on quietness, convenience, and comfort. If something looks outdated, you can suggest an edit.</p>
         <div class="feedback-actions">
             <button id="about-btn-secondary" type="button" class="secondary-button">About</button>
-            <button id="suggest-edit-btn" type="button" class="primary-button">Suggest edit</button>
+            <button id="suggest-edit-btn" type="button" class="primary-button">Suggest Edit</button>
         </div>
     </aside>
 
@@ -121,7 +121,7 @@
     <div id="suggest-edit-modal" class="modal-overlay" aria-hidden="true">
         <div class="modal modal-wide" role="dialog" aria-modal="true" aria-labelledby="suggest-edit-title">
             <button id="suggest-edit-close" class="modal-close" aria-label="Close">×</button>
-            <h2 id="suggest-edit-title">Suggest an edit</h2>
+            <h2 id="suggest-edit-title">Suggest an Edit</h2>
             <p class="modal-intro">Since this map is a static snapshot, you can send suggested fixes or additions through a pre-filled GitHub issue.</p>
 
             <label class="modal-field">
@@ -142,7 +142,7 @@
 
             <label class="modal-field">
                 <span>Suggestion</span>
-                <textarea id="suggest-edit-notes" rows="5" placeholder="Tell us what to change and any source or evidence you have."></textarea>
+                <textarea id="suggest-edit-notes" rows="5" placeholder="Tell us what to change and any source/evidence you have."></textarea>
             </label>
 
             <label class="modal-field">

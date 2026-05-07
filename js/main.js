@@ -84,6 +84,21 @@ function getNoiseLabel(level) {
     return option ? option.label : 'Unknown';
 }
 
+// add customize occupancy SVG icon
+function getOccupancyIcon(level) {
+    switch (level) {
+        case 'low':
+            return 'img/onebook.svg';
+        case 'medium':
+            return 'img/threebooks.svg';
+        case 'high':
+            return 'img/stackofbooks.svg';
+        default:
+            return 'img/onebook.svg';
+
+    }
+}
+
 // Get occupancy display label
 function getOccupancyLabel(level) {
     if (!level) return 'Unknown';
@@ -93,11 +108,11 @@ function getOccupancyLabel(level) {
 
 // Get occupancy color (used for map markers)
 // If level is null, return gray
-function getOccupancyColor(level) {
-    if (!level) return '#c5cad1';
-    const option = OCCUPANCY_OPTIONS.find(item => item.value === level);
-    return option ? option.color : '#c5cad1';
-}
+// function getOccupancyColor(level) {
+//     if (!level) return '#c5cad1';
+//     const option = OCCUPANCY_OPTIONS.find(item => item.value === level);
+//     return option ? option.color : '#c5cad1';
+// }
 
 // time parsing and formatting functions
 // Convert 0-23 hours to 12-hour format label (12:00 AM - 11:00 PM)
@@ -199,8 +214,9 @@ function makePopup(spot) {
     const ratingLabel = escapeHtml(spot.rating || 'N/A');
     const hoursLabel = escapeHtml(spot.hours || 'Full day');
     const noiseLabel = escapeHtml(getNoiseLabel(spot.noise));
+    const occupancyIcon = getOccupancyIcon(spot.occupancy);
     const occupancyLabel = escapeHtml(getOccupancyLabel(spot.occupancy));
-    const occupancyColor = getOccupancyColor(spot.occupancy);
+    // const occupancyColor = getOccupancyColor(spot.occupancy);
 
     return `
         <div class="popup-card">
@@ -226,9 +242,13 @@ function makePopup(spot) {
                 </div>
                 <div class="popup-meta-item">
                     <span class="popup-meta-label">Occupancy</span>
-                    <span class="popup-meta-value">
-                        <span class="meta-dot meta-dot-occupancy" data-occupancy="${escapeHtml(spot.occupancy || 'unknown')}" style="background:${occupancyColor}"></span>
-                        ${occupancyLabel}
+                    <span class="popup-meta-value occupancy-display">
+                        <img 
+                            src="${occupancyIcon}" 
+                            alt="${occupancyLabel}"
+                            class="occupancy-icon"
+                        >
+                    ${occupancyLabel}
                     </span>
                 </div>
             </div>
@@ -251,13 +271,29 @@ function renderFilters() {
     `).join('');
 
     // Generate occupancy checkboxes (with color swatches)
+    // occupancyContainer.innerHTML = OCCUPANCY_OPTIONS.map(option => `
+    //     <label class="checkbox-chip occupancy-chip">
+    //         <input type="checkbox" value="${option.value}" data-filter="occupancy">
+    //         <span class="chip-swatch" style="background:${option.color}"></span>
+    //         <span class="chip-label">${option.label}</span>
+    //     </label>
+    // `).join('');
+    // Generate occupancy checkboxes (with SVG icons)
     occupancyContainer.innerHTML = OCCUPANCY_OPTIONS.map(option => `
-        <label class="checkbox-chip occupancy-chip">
-            <input type="checkbox" value="${option.value}" data-filter="occupancy">
-            <span class="chip-swatch" style="background:${option.color}"></span>
-            <span class="chip-label">${option.label}</span>
-        </label>
-    `).join('');
+    <label class="checkbox-chip occupancy-chip">
+        <input type="checkbox" value="${option.value}" data-filter="occupancy">
+
+        <span class="chip-icon">
+            <img 
+                src="${getOccupancyIcon(option.value)}" 
+                alt="${option.label}"
+                class="chip-svg-icon"
+            >
+        </span>
+
+        <span class="chip-label">${option.label}</span>
+    </label>
+`   ).join('');
 }
 
 // Collect all checked checkbox values into a Set
@@ -346,14 +382,21 @@ function renderMap(options = {}) {
     // Create marker for each filtered spot
     filtered.forEach(spot => {
         // Create a circle marker, color based on occupancy
-        const marker = L.circleMarker([spot.lat, spot.lng], {
-            radius: 9,
-            color: '#ffffff',              // Border color
-            weight: 2,                     // Border width
-            fillColor: getOccupancyColor(spot.occupancy), // Fill color (green/yellow/red or gray)
-            fillOpacity: 0.92,
-            className: 'spot-marker'
-        });
+        // const marker = L.circleMarker([spot.lat, spot.lng], {
+        //     radius: 9,
+        //     color: '#ffffff',              // Border color
+        //     weight: 2,                     // Border width
+        //     fillColor: getOccupancyColor(spot.occupancy), // Fill color (green/yellow/red or gray)
+        //     fillOpacity: 0.92,
+        //     className: 'spot-marker'
+        // });
+        const marker = L.marker([spot.lat, spot.lng], {icon: L.icon({
+            iconUrl: getOccupancyIcon(spot.occupancy),
+            iconSize: [32, 32],
+            iconAnchor: [16, 16],
+            popupAnchor: [0, -16]
+        })
+});
 
         // Bind popup shown on click
         marker.bindPopup(makePopup(spot), {
@@ -529,12 +572,19 @@ fetch('data/study_spots_template.json')
 
         // Assign default values to null fields
         buildDummyMetadata(state.spots);
-
-        // Creat autofill suggestions
-        populateSearchSuggestions();
         
         // Populate search suggestions (datalist) from loaded spots
-        (function populateSearchSuggestions() {
+        // (function populateSearchSuggestions() {
+        //     const datalist = document.getElementById('search-suggestions');
+        //     if (!datalist) return;
+        //     const suggestions = new Set();
+        //     state.spots.forEach(s => {
+        //         if (s.name) suggestions.add(s.name);
+        //         if (s.building) suggestions.add(s.building);
+        //     });
+        //     datalist.innerHTML = Array.from(suggestions).map(text => `\n                <option value="${escapeHtml(text)}">\n            `).join('');
+        // })();
+         function populateSearchSuggestions() {
             const datalist = document.getElementById('search-suggestions');
             if (!datalist) return;
             const suggestions = new Set();
@@ -542,9 +592,14 @@ fetch('data/study_spots_template.json')
                 if (s.name) suggestions.add(s.name);
                 if (s.building) suggestions.add(s.building);
             });
-            datalist.innerHTML = Array.from(suggestions).map(text => `\n                <option value="${escapeHtml(text)}">\n            `).join('');
-        })();
+            datalist.innerHTML = Array.from(suggestions)
+                .map(text => `<option value="${escapeHtml(text)}">`)
+                .join('');
+        }
         
+         // Create autofill suggestions
+        populateSearchSuggestions();
+
         // Initialize UI
         renderFilters();
         attachEvents();
@@ -561,20 +616,22 @@ fetch('data/study_spots_template.json')
         document.getElementById('results-count').textContent = 'Failed to load data';
     });
 // Populate autofill suggestions for search box
-function populateSearchSuggestions() {
+// function populateSearchSuggestions() {
 
-    const datalist = document.getElementById('study-spots-list');
+//     const datalist = document.getElementById('study-spots-list');
 
-    // Get all unique spot names
-    const uniqueNames = [...new Set(
-        state.spots.map(spot => spot.name)
-    )];
+//     // Get all unique spot names
+//     const uniqueNames = [...new Set(
+//         state.spots.map(spot => spot.name)
+//     )];
 
-    // Generate suggestion options
-    datalist.innerHTML = uniqueNames.map(name => `
-        <option value="${escapeHtml(name)}"></option>
-    `).join('');
-}
+//     // Generate suggestion options
+//     datalist.innerHTML = uniqueNames.map(name => `
+//         <option value="${escapeHtml(name)}"></option>
+//     `).join('');
+// }
+
+
    
     
 
