@@ -45,6 +45,8 @@ const OCCUPANCY_OPTIONS = [
     { value: 'high', label: 'Full', color: '#d64545' }       // Red
 ];
 
+const GITHUB_ISSUES_URL = 'https://github.com/rren22/GEOG575Spring2026FinalProject/issues/new';
+
 // optional data processing: Handle missing/null values in the dataset
 // Assign default values to null fields
 // Only fills hours (null -> 'Full day'), noise and occupancy stay null (display gray)
@@ -224,7 +226,7 @@ function makePopup(spot) {
                 <div class="popup-meta-item">
                     <span class="popup-meta-label">Occupancy</span>
                     <span class="popup-meta-value">
-                        <span class="meta-dot meta-dot-occupancy" style="background:${occupancyColor}"></span>
+                        <span class="meta-dot meta-dot-occupancy" data-occupancy="${escapeHtml(spot.occupancy || 'unknown')}" style="background:${occupancyColor}"></span>
                         ${occupancyLabel}
                     </span>
                 </div>
@@ -308,6 +310,25 @@ function matchesSpot(spot) {
 function updateCount(filtered) {
     document.getElementById('results-count').textContent = 
         `${filtered.length} spot${filtered.length === 1 ? '' : 's'}`;
+}
+
+function buildIssueUrl({ spot, editType, notes, contact }) {
+    const title = spot ? `Suggestion: ${editType} - ${spot}` : `Suggestion: ${editType}`;
+    const bodyParts = [
+        `**Edit type:** ${editType}`,
+        spot ? `**Spot / location:** ${spot}` : null,
+        notes ? `**Suggestion:**\n${notes}` : null,
+        contact ? `**Contact:** ${contact}` : null,
+        '',
+        `Submitted from: ${window.location.href}`
+    ].filter(Boolean);
+
+    const params = new URLSearchParams({
+        title,
+        body: bodyParts.join('\n')
+    });
+
+    return `${GITHUB_ISSUES_URL}?${params.toString()}`;
 }
 
 // map rendering function
@@ -424,6 +445,75 @@ function attachEvents() {
         syncStateFromControls();
         renderMap({ fitToData: true });
     });
+
+    const suggestEditBtn = document.getElementById('suggest-edit-btn');
+    const suggestEditModal = document.getElementById('suggest-edit-modal');
+    const suggestEditClose = document.getElementById('suggest-edit-close');
+    const suggestEditSubmit = document.getElementById('suggest-edit-submit');
+
+    if (suggestEditBtn && suggestEditModal) {
+        const openSuggestEdit = () => suggestEditModal.setAttribute('aria-hidden', 'false');
+        const closeSuggestEdit = () => suggestEditModal.setAttribute('aria-hidden', 'true');
+
+        suggestEditBtn.addEventListener('click', openSuggestEdit);
+        if (suggestEditClose) suggestEditClose.addEventListener('click', closeSuggestEdit);
+
+        suggestEditModal.addEventListener('click', event => {
+            if (event.target === suggestEditModal) {
+                closeSuggestEdit();
+            }
+        });
+
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape') {
+                closeSuggestEdit();
+            }
+        });
+
+        if (suggestEditSubmit) {
+            suggestEditSubmit.addEventListener('click', () => {
+                const spot = document.getElementById('suggest-edit-spot').value.trim();
+                const editType = document.getElementById('suggest-edit-type').value.trim();
+                const notes = document.getElementById('suggest-edit-notes').value.trim();
+                const contact = document.getElementById('suggest-edit-contact').value.trim();
+
+                if (!notes) {
+                    alert('Please add a short suggestion before opening the issue.');
+                    return;
+                }
+
+                const issueUrl = buildIssueUrl({ spot, editType, notes, contact });
+                window.open(issueUrl, '_blank', 'noopener,noreferrer');
+            });
+        }
+    }
+
+    const aboutTriggers = [
+        document.getElementById('about-btn'),
+        document.getElementById('about-btn-secondary')
+    ].filter(Boolean);
+
+    if (aboutTriggers.length && document.getElementById('about-modal')) {
+        const aboutModal = document.getElementById('about-modal');
+        const aboutClose = document.getElementById('about-close');
+        const openAbout = () => aboutModal.setAttribute('aria-hidden', 'false');
+        const closeAbout = () => aboutModal.setAttribute('aria-hidden', 'true');
+
+        aboutTriggers.forEach(trigger => trigger.addEventListener('click', openAbout));
+        if (aboutClose) aboutClose.addEventListener('click', closeAbout);
+
+        aboutModal.addEventListener('click', (e) => {
+            if (e.target === aboutModal) {
+                closeAbout();
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeAbout();
+            }
+        });
+    }
 }
 
 // Main execution flow
@@ -439,6 +529,18 @@ fetch('data/study_spots_template.json')
         // Assign default values to null fields
         buildDummyMetadata(state.spots);
         
+        // Populate search suggestions (datalist) from loaded spots
+        (function populateSearchSuggestions() {
+            const datalist = document.getElementById('search-suggestions');
+            if (!datalist) return;
+            const suggestions = new Set();
+            state.spots.forEach(s => {
+                if (s.name) suggestions.add(s.name);
+                if (s.building) suggestions.add(s.building);
+            });
+            datalist.innerHTML = Array.from(suggestions).map(text => `\n                <option value="${escapeHtml(text)}">\n            `).join('');
+        })();
+        
         // Initialize UI
         renderFilters();
         attachEvents();
@@ -448,6 +550,7 @@ fetch('data/study_spots_template.json')
         
         // First map render and auto-fit view
         renderMap({ fitToData: true });
+
     })
     .catch(error => {
         console.error('Error loading GeoJSON:', error);

@@ -25,14 +25,18 @@
             <!-- Panel title section -->
             <div class="panel-header">
                 <p class="eyebrow">UW-Madison</p>
-                <h1>Study Spots</h1>
+                <div class="panel-title-row">
+                    <h1>Study Spots</h1>
+                    <!-- <button id="about-btn" class="about-btn" type="button">Info</button> -->
+                </div>
                 <p class="panel-copy">Search and filter the spots, then click markers on the map for details.</p>
             </div>
 
             <!-- Search box: Search by name, building, description -->
             <label class="control-group">
                 <span class="control-title">Search</span>
-                <input id="search-input" type="search" placeholder="Name, building, description">
+                <input id="search-input" list="search-suggestions" type="search" placeholder="Name, building, description">
+                <datalist id="search-suggestions"></datalist>
             </label>
 
             <!-- Time range selector: Dual-slider for operating hours -->
@@ -68,7 +72,9 @@
             <!-- Footer: Result count and reset button -->
             <div class="panel-footer">
                 <span id="results-count">0 spots</span>
-                <button id="reset-filters" type="button">Reset</button>
+                <div class="footer-actions">
+                    <button id="reset-filters" type="button">Reset</button>
+                </div>
             </div>
         </aside>
 
@@ -76,7 +82,74 @@
         <main id="map"></main>
     </div>
 
+    <!-- Bottom-right feedback panel -->
+    <aside class="feedback-panel" aria-label="Review and feedback">
+        <p class="feedback-kicker">Review</p>
+        <h2>Our  ratings are personal notes</h2>
+        <p class="feedback-copy">We score spots based on quietness, convenience, and comfort. If something looks outdated, you can suggest an edit.</p>
+        <div class="feedback-actions">
+            <button id="about-btn-secondary" type="button" class="secondary-button">About</button>
+            <button id="suggest-edit-btn" type="button" class="primary-button">Suggest edit</button>
+        </div>
+    </aside>
+
     <!-- Main application JavaScript file -->
+    <!-- About modal -->
+    <div id="about-modal" class="modal-overlay" aria-hidden="true">
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="about-title">
+            <button id="about-close" class="modal-close" aria-label="Close">×</button>
+            <h2 id="about-title">About</h2>
+            <p>This project is a personal visualization of campus study spots, designed to help users quickly find places suitable for studying. The locations displayed combine public listings with manual edits and additions by the project team.</p>
+            <h3>Data sources & edits</h3>
+            <p>Primary source: <a href="https://buckygrades.com/study/" target="_blank" rel="noopener">buckygrades.com/study</a>. The project team has added new attributes and corrected a small number of records (for example, missing photos, normalized names, or slight coordinate adjustments) to improve coverage and clarity.</p>
+            <h3>Ratings</h3>
+            <p>Ratings reflect the author's subjective impressions, considering factors such as quietness, convenience (seating/outlets), and comfort. Values use low/medium/top tier. Ratings are qualitative and not instrumented measurements.</p>
+            <h3>Limitations</h3>
+            <p>Data shown are static snapshots and not live. Dynamic attributes such as occupancy and noise should be treated as illustrative; please verify conditions on-site.</p>
+            <p style="margin-top:8px;">Project code & issues: <a href="https://github.com/rren22/GEOG575Spring2026FinalProject" target="_blank" rel="noopener noreferrer">GitHub repository</a></p>
+        </div>
+    </div>
+
+    <!-- Suggest edit modal -->
+    <div id="suggest-edit-modal" class="modal-overlay" aria-hidden="true">
+        <div class="modal modal-wide" role="dialog" aria-modal="true" aria-labelledby="suggest-edit-title">
+            <button id="suggest-edit-close" class="modal-close" aria-label="Close">×</button>
+            <h2 id="suggest-edit-title">Suggest an edit</h2>
+            <p class="modal-intro">Since this map is a static snapshot, you can send suggested fixes or additions through a pre-filled GitHub issue.</p>
+
+            <label class="modal-field">
+                <span>Spot / location</span>
+                <input id="suggest-edit-spot" type="text" placeholder="e.g. Memorial Library, Union South">
+            </label>
+
+            <label class="modal-field">
+                <span>What should change?</span>
+                <select id="suggest-edit-type">
+                    <option value="Update info">Update info</option>
+                    <option value="Add new spot">Add new spot</option>
+                    <option value="Fix rating">Fix rating</option>
+                    <option value="Fix hours / noise / occupancy">Fix hours / noise / occupancy</option>
+                    <option value="Other">Other</option>
+                </select>
+            </label>
+
+            <label class="modal-field">
+                <span>Suggestion</span>
+                <textarea id="suggest-edit-notes" rows="5" placeholder="Tell us what to change and any source or evidence you have."></textarea>
+            </label>
+
+            <label class="modal-field">
+                <span>Optional contact</span>
+                <input id="suggest-edit-contact" type="text" placeholder="Email or name (optional)">
+            </label>
+
+            <div class="modal-actions">
+                <button id="suggest-edit-submit" type="button" class="primary-button">Open GitHub issue</button>
+                <a class="secondary-link" href="https://github.com/rren22/GEOG575Spring2026FinalProject/issues" target="_blank" rel="noopener noreferrer">View issues</a>
+            </div>
+        </div>
+    </div>
+
     <script src="js/main.js"></script>
 </body>
 </html>
